@@ -12,8 +12,6 @@ const setWeatherData = data => {
     const weatherData = {
         location: data.name,
         description: data.weather[0].main,
-        humidity: data.main.humidity,
-        pressure: data.main.pressure,
         temperature: data.main.temp,
         temperature_max: data.main.temp_max,
         temperature_min: data.main.temp_min,
@@ -24,6 +22,16 @@ const setWeatherData = data => {
     Object.keys(weatherData).forEach( key => {
         document.getElementById(key).textContent = weatherData[key];
     });
+
+    cleanUp();
+}
+
+const cleanUp = () => {
+    let container = document.getElementById('container');
+    let loader = document.getElementById('loader');
+
+    loader.style.display = 'none';
+    container.style.display = 'flex';
 }
 
 const getDate = () => {
