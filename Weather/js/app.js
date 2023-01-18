@@ -50,3 +50,8 @@ const getHour = () => {
 const onload = () => {
     navigator.geolocation.getCurrentPosition(fetchData);
 }
+
+let refresh = document.getElementById('refresh');
+refresh.addEventListener('click', _ => {
+            location.reload();
+})
