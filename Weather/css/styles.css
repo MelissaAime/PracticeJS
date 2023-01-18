@@ -12,10 +12,22 @@ body {
     align-items: center;
 }
 
+#divContainer{
+    display: none;
+    flex-direction: column;
+}
+
+.update{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
 #container{
     background-color: #176087;
     padding: 40px;
-    display: none;
+    display: flex;
+    flex-direction: row;
     border-radius: 10% / 50%;
     align-items: center;
 }

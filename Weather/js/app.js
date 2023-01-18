@@ -17,6 +17,7 @@ const setWeatherData = data => {
         temperature_min: data.main.temp_min,
         temperature_feel: data.main.feels_like,
         date: getDate(),
+        hour: getHour(),
     };
 
     Object.keys(weatherData).forEach( key => {
@@ -27,7 +28,7 @@ const setWeatherData = data => {
 }
 
 const cleanUp = () => {
-    let container = document.getElementById('container');
+    let container = document.getElementById('divContainer');
     let loader = document.getElementById('loader');
 
     loader.style.display = 'none';
@@ -37,6 +38,13 @@ const cleanUp = () => {
 const getDate = () => {
     let date = new Date();
     return `${date.getDate()}-${('0' + date.getMonth() + 1).slice(-2)}-${date.getFullYear()}`;
+}
+
+const getHour = () => {
+    let hour = new Date();
+    let now = hour.toLocaleTimeString();
+    return now;
+    
 }
 
 const onload = () => {

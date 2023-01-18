@@ -12,36 +12,42 @@
 </head>
 <body onload="onload()">
     
-    <div id="container">
-        <div class="block">
-            <div class="info-container">
-                <div class="title" id="location"></div>
+    <div id="divContainer">
+        <div id="container">
+            <div class="block">
+                <div class="info-container">
+                    <div class="title" id="location"></div>
+                </div>
+                <div class="info-container">
+                    <div class="info" id="date"></div>
+                </div>
+                <div class="info-container">
+                    <div class="info" id="description"></div>
+                </div>
             </div>
-            <div class="info-container">
-                <div class="info" id="date"></div>
+    
+            <div class="block">
+                <p>Temperature</p>
+                <div class="temp" id="temperature"></div>
+                <p>Feels like</p>
+                <div class="temp" id="temperature_feel"></div>
+            </div>
+            
+            <div class="block">
+                <p>Max.</p>
+                <div class="temp" id="temperature_max"></div>
+                <p>Min.</p>
+                <div class="temp" id="temperature_min"></div>
             </div>
         </div>
 
-        <div class="block">
-            <div class="info-container">
-                <div class="info" id="description"></div>
-                <div class="info" id="icon"></div>
-            </div>
+        <div class="update">
+            <p>Last Update: </p>
+            <div class="info" id="hour"></div>
         </div>
-
-        <div class="block">
-            <p>Temperature</p>
-            <div class="temp" id="temperature"></div>
-            <p>Feels like</p>
-            <div class="temp" id="temperature_feel"></div>
-        </div>
-        <div class="block">
-            <p>Max.</p>
-            <div class="temp" id="temperature_max"></div>
-            <p>Min.</p>
-            <div class="temp" id="temperature_min"></div>
-        </div>
+        
     </div>
+    
 
 
     <div id="loader" class="loader">Loading...</div>
