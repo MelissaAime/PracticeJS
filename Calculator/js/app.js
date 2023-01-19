@@ -10,3 +10,9 @@ buttonNumber.forEach(button => {
         display.addNumber(button.innerHTML)
     });
 });
+
+buttonOperator.forEach(button => {
+    button.addEventListener('click', () => {
+        display.computar(button.value)
+    })
+})
