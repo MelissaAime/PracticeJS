@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #c3c3c3;
+}
+
+#container{
+    background-color: #fff;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    box-shadow: inset 4px 4px 6px #cecece,
+                inset -4px -4px 6px #fff;
+    margin: 0px auto;
+    margin-top: 350px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    transform: scale(.7);
+    background-color: #b7b7b7;
+    border-radius: 25px;
+    box-shadow: 3px 3px 8px #c4c4c4,
+                -3px -3px 8px #fff;
+}
+
+#container.active .toggle{
+    left: 40px;
+    background-color: #626262;
+}
+
+body.active{
+    background-color: #000;
+}
