@@ -111,3 +111,19 @@ input:focus {
     text-decoration: line-through;
     color: var(--dark);
 }
+
+.deleteTaskButton {
+    height: 22px;
+    border-radius: 50%;
+    font-size: 12px;
+    background-color: var(--diabled);
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 4%;
+}
+
+#tasksContainer{
+    display: inline;
+    position: relative;
+}

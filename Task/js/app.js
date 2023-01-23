@@ -17,11 +17,21 @@ const addNewTask = event => {
     event.preventDefault();
     const { value } = event.target.taskText;
     if(!value) return;
+    
     const task = document.createElement('div');
     task.classList.add('task', 'roundBorder');
-    task.addEventListener('click', changeTaskState)
+    task.addEventListener('click', changeTaskState);
     task.textContent = value;
+
     tasksContainer.prepend(task);
+
+    const taskDelete = document.createElement('button');
+    task.appendChild(taskDelete);
+    taskDelete.classList.add('deleteTaskButton');
+    taskDelete.addEventListener('click', changeTaskState);
+    taskDelete.textContent = 'x';
+    console.log(taskDelete);
+    
     event.target.reset();
 };
 
