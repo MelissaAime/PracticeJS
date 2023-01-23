@@ -28,12 +28,15 @@ const addNewTask = event => {
     const taskDelete = document.createElement('button');
     task.appendChild(taskDelete);
     taskDelete.classList.add('deleteTaskButton');
-    taskDelete.addEventListener('click', changeTaskState);
+    taskDelete.addEventListener('click', deleteTask);
     taskDelete.textContent = 'x';
-    console.log(taskDelete);
-    
+
     event.target.reset();
 };
+
+const deleteTask = event => {
+    event.target.parentNode.parentNode.removeChild(event.target.parentNode)
+}
 
 const changeTaskState = event => {
     event.target.classList.toggle('done');
