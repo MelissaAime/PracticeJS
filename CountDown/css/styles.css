@@ -1,16 +1,29 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    height: 320px;
     background-color:dodgerblue;
     color: #fff;
+    display: flex;
     text-align: center;
-    margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 120px 340px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(rgb(169, 111, 213), rgb(91, 40, 180) );
+    clip-path: polygon(0 0, 100% 0, 100% 250px, 0 100%);
 }
 
 .container{
     width: 40%;
     display: flex;
     justify-content: space-around;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 
 .number{
