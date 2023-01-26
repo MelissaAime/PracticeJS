@@ -17,6 +17,10 @@ const playPause = () => {
     }
 }
 
+const pause = () => {
+    secondsSphere.style.animationPlayState = 'paused';
+    clearInterval(stopwatchInterval);
+}
 
 const start = () => {
     secondsSphere.style.animation = 'rotation 60s linear infinite';
