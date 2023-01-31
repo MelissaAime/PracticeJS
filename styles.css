@@ -6,27 +6,34 @@
 }
 
 :root{
-    --bkg: rgb(44, 7, 63);
-    --txt: #fff;
+    --clr: #222327;
+    --wht: #fff;
+    --vlt: #2c073f;
+    --vlt1: #440c60;
+    --vlt2: #6c1b95;
 }
 
+body{
+    background: var(--clr);
+}
 .container{
-    width: 100%;
-    height: 100vh;
-    padding: 8rem 12rem;
-    background-color: var(--bkg);
+    width: 80% auto;
+    height: 80vh;
+    margin: 6rem;
+    padding: 3rem 7rem;
+    background-color: var(--vlt1);
 }
 
 .container h1{
     margin: 1.2rem;
     font-size: 32px;
-    color: var(--txt);
+    color: var(--wht);
 }
 
 .container p{
     margin: 1.2rem;
     font-size: 18px;
-    color: var(--txt);
+    color: var(--wht);
 }
 
 .list{
@@ -38,7 +45,7 @@
 
 a{
     text-decoration: none;
-    color: var(--txt);
+    color: var(--wht);
     padding: .5rem 0;
     cursor: pointer;
 }

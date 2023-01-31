@@ -4,10 +4,22 @@
     box-sizing: border-box;
 }
 
+:root{
+    --clr: #222327;
+    --wht: #fff;
+    --vlt: #2c073f;
+    --vlt1: #440c60;
+    --vlt2: #6c1b95;
+}
+body{
+    background-color: var(--clr);
+}
+
 .box{
     height: 320px;
-    background-color:dodgerblue;
-    color: #fff;
+    background: var(--vlt);
+    background: linear-gradient(60deg, var(--vlt) 0%, var(--vlt1) 35%, var(--vlt2) 100%);
+    color: var(--wht);
     display: flex;
     text-align: center;
     align-items: center;
@@ -15,7 +27,6 @@
     flex-direction: column;
     margin: 120px 340px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: linear-gradient(rgb(169, 111, 213), rgb(91, 40, 180) );
     clip-path: polygon(0 0, 100% 0, 100% 250px, 0 100%);
 }
 

@@ -1,14 +1,26 @@
+:root{
+    --clr: #222327;
+    --wht: #fff;
+    --vlt: #2c073f;
+    --vlt1: #440c60;
+}
+
+body{
+    background-color: var(--clr);
+}
+
 main{
     font-family: 'Roboto Mono', monospace;
     position: relative;
+    margin: 120px;
 }
 
 .circle{
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid var(--wht);
+    color: var(--wht);
     margin: 50px auto;
     display: flex;
     justify-content: center;
@@ -25,7 +37,7 @@ main{
     height: 160px;
     left: calc(50% - 80px);
     top: calc(50% - 80px);
-    background-color: crimson;
+    background-color: var(--vlt1);
 }
 
 .seconds-sphere{

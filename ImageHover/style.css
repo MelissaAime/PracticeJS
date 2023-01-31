@@ -4,6 +4,10 @@
     font-family: sans-serif;
 }
 
+body{
+    background: #222327;
+}
+
 .container{
     width: 100%;
     display: flex;

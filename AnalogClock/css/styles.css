@@ -1,5 +1,12 @@
+:root{
+    --clr: #222327;
+    --wht: #fff;
+    --vlt: #2c073f;
+    --vlt2: #6c1b95;
+}
+
 html{
-    background: #09131d;
+    background: var(--clr);
     text-align: center;
     font-size: 10px;
 }
@@ -16,7 +23,7 @@ body{
 .clock{
     width: 30rem;
     height: 30rem;
-    border: 7px solid #09131d;
+    border: 7px solid var(--clr);
     box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
         inset 4px 4px 10px rgba(0, 0, 0, 0.5),
         inset -4px -4px 10px rgba(67, 67, 67, 0.5),
@@ -32,7 +39,7 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 100%;
-    background: #09131d;
+    background: var(--clr);
     overflow: hidden;
 }
 
@@ -49,7 +56,7 @@ body{
     position: absolute;
     width: 5px;
     height: 100%;
-    background: rgb(167, 78, 255);
+    background: var(--vlt);
     z-index: 0;
     left: 49%;
 }
@@ -89,7 +96,7 @@ body{
     left: 10%;
     width: 80%;
     height: 80%;
-    background: #09131d;
+    background: var(--clr);
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
@@ -106,7 +113,7 @@ body{
     border-radius: 18px;
     margin-left: -9px;
     margin-top: -6px;
-    background: #64467c;
+    background: var(--vlt2);
     z-index: 11;
 }
 
@@ -114,7 +121,7 @@ body{
     width: 50%;
     right: 50%;
     height: 6px;
-    background: rgb(126, 0, 252);
+    background: var(--vlt2);
     position: absolute;
     top: 50%;
     border-radius: 6px;
@@ -135,7 +142,7 @@ body{
 }
 
 .hand.second-hand {
-    background: #ffffff;
+    background: var(--wht);
     width: 45%;
     height: 2px;
 }

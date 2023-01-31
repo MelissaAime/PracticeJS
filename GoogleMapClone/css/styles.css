@@ -1,4 +1,10 @@
 #map{
     height: 700px;
-    width: 100%;
+    width: auto;
+    margin: 2rem;
 }
+
+body{
+    background: #222327;
+}
+
