@@ -14,3 +14,4 @@ Different projects using HTML, CSS and JavaScript to practice.
 10. Calendar
 11. ImageHover
 12. MenuDesign
+13. GoogleMapClone
