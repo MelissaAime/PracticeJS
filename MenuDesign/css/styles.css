@@ -9,6 +9,7 @@
     --clr: #222327;
     --wht: #fff;
     --vlt: #2c073f;
+    --vlt2: #6c1b95;
 }
 
 body{
@@ -90,7 +91,7 @@ body{
     top: -50%;
     width: 70px;
     height: 70px;
-    background: var(--vlt);
+    background: var(--vlt2);
     border-radius: 50%;
     border: 6px solid var(--clr);
     transition: 0.5s;
