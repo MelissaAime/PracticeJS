@@ -16,36 +16,25 @@
 body{
     background: var(--clr);
 }
-.container{
+
+.containerd{
     width: 80% auto;
-    height: 80vh;
     margin: 6rem;
-    padding: 3rem 7rem;
+    padding-bottom: 4rem;
     background-color: var(--vlt1);
 }
 
-.container h1{
+.containerd h1{
     margin: 1.2rem;
+    padding: 1rem 5rem;
     font-size: 32px;
     color: var(--wht);
 }
 
-.container p{
+.containerd p{
     margin: 1.2rem;
+    padding: 1rem 5rem;
     font-size: 18px;
     color: var(--wht);
 }
 
-.list{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    margin: 1.2rem;
-}
-
-a{
-    text-decoration: none;
-    color: var(--wht);
-    padding: .5rem 0;
-    cursor: pointer;
-}
