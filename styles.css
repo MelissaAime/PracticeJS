@@ -8,6 +8,7 @@
 :root{
     --clr: #222327;
     --wht: #fff;
+    --gry: #7c7c7c;
     --vlt: #2c073f;
     --vlt1: #440c60;
     --vlt2: #6c1b95;
@@ -25,20 +26,26 @@ body{
 }
 
 .containerd h1{
-    margin: 1.2rem;
+    margin: 1.2vw;
     padding: 2rem 5rem 0 5rem;
-    font-size: 32px;
+    text-align: center;
+    font-size: 2vw;
     color: var(--wht);
 }
 
-.containerd p{
-    margin: 1.2rem;
+.containerd .text{
+    margin: 1.2vw;
     padding: 1rem 5rem;
-    font-size: 18px;
+    text-align: center;
+    font-size: 1vw;
     color: var(--wht);
 }
 
-.footer{
-    text-align: end;
-    padding: 1rem 0;
+a{
+    text-decoration: none;
+    color: var(--wht);
+}
+
+a:hover{
+    color: var(--gry);
 }

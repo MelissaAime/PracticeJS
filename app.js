@@ -96,14 +96,12 @@ let card = document.getElementById('card-template');
 
 projects.map((x)=>{
     card.innerHTML += `
-    <div class="card py-1"
-        <div>
-            <img src="${x.img}" class="card-img-top" alt="${x.name}">
-            <div class="card-body">
-            <h5 class="card-title">${x.id}. ${x.name}</h5>
-            <p class="card-text py-0">${x.content}</p>
-            <a href="${x.src}" class="btn btn-secondary px-3">Visit</a>
-            </div>
+    <div class="card py-2">
+        <img src="${x.img}" class="card-img-top" alt="${x.name}">
+        <div class="card-body">
+        <h5 class="card-title">${x.id}. ${x.name}</h5>
+        <p class="card-text py-0">${x.content}</p>
+        <a href="${x.src}" class="btn btn-secondary px-3">Visit</a>
         </div>
     </div>
     `
