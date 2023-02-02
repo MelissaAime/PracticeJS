@@ -3,6 +3,7 @@
     --wht: #fff;
     --vlt: #2c073f;
     --vlt1: #440c60;
+    --vlt2: #6c1b95;
 }
 
 body{
@@ -84,4 +85,35 @@ main{
     height: 10px;
     width: 10px;
     cursor: pointer;
+}
+
+.home{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    bottom: 10%;
+    width: 4rem;
+    height: 4rem;
+    background: var(--wht);
+    border-radius: 50%;
+    z-index: 1000;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px 1px var(--vlt);
+}
+
+.home .home-icon{
+    color: var(--clr);
+    font-size: 1.8rem;
+}
+
+.home:hover{
+    background: var(--vlt2);
+    box-shadow: 0px 0px 10px 1px var(--wht);
+}
+
+.home:hover .home-icon{
+    color: var(--wht);
 }

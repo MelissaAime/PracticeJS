@@ -118,3 +118,33 @@ html{
     border-radius: 5px;
 }
 
+.home{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    bottom: 10%;
+    width: 6rem;
+    height: 6rem;
+    background: var(--wht);
+    border-radius: 50%;
+    z-index: 1000;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px 1px var(--vlt);
+}
+
+.home .home-icon{
+    color: var(--clr);
+    font-size: 2.4rem;
+}
+
+.home:hover{
+    background: var(--vlt2);
+    box-shadow: 0px 0px 10px 1px var(--wht);
+}
+
+.home:hover .home-icon{
+    color: var(--wht);
+}
