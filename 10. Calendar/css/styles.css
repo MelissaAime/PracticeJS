@@ -148,3 +148,36 @@ html{
 .home:hover .home-icon{
     color: var(--wht);
 }
+
+@media (max-width: 700px) {
+    .home{
+        bottom: 8%;
+        width: 2rem;
+        height: 2rem;
+    }
+    .home .home-icon{
+        font-size: 0.8rem;
+    }
+    .calendar{
+        width: 32rem;
+    }
+    .month i{
+        font-size: 2rem;
+    }
+    .month h1{
+        font-size: 2.2rem;
+        margin-bottom: 0.7rem;
+    }
+    .month p{
+        font-size: 1rem;
+    }
+    .weekdays div{
+        font-size: 1rem;
+    }
+    .days div{
+        font-size: 1rem;
+        margin: .2rem;
+        width: calc(28.5rem /7);
+        height: 5rem;
+    }
+}
