@@ -73,3 +73,33 @@ body{
 .home:hover .home-icon{
     color: var(--wht);
 }
+
+@media (max-width: 700px) {
+    .home{
+        bottom: 8%;
+        width: 2rem;
+        height: 2rem;
+    }
+    .home .home-icon{
+        font-size: 0.8rem;
+    }
+    .box{
+        height: 250px;
+        margin: 20px auto;
+        clip-path: polygon(0 0, 100% 0, 100% 200px, 0 100%);
+    }
+    .container{
+        width: 90%;
+        justify-content: space-evenly;
+        margin: 15px auto;
+    }
+    .number{
+        font-size: 30px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    span{
+        font-size: 10px;
+    }
+}
