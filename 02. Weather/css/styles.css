@@ -184,4 +184,7 @@ body {
     #container > .block {
       padding: 8px;
     }
+    .loader {
+      font-size: 7px;
+    }
 }
