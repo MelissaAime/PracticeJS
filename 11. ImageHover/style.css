@@ -117,9 +117,12 @@ body{
     .home .home-icon{
         font-size: 0.8rem;
     }
+    .container{
+        flex-direction: column;
+    }
     .container figure{
-        width: 500px;
-        height: 200px;
+        width: 250px;
+        height: 190px;
         margin: 0.5rem;
     }
 }
