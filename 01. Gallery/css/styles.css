@@ -136,3 +136,35 @@ body{
 .home:hover .home-icon{
     color: var(--wht);
 }
+
+@media (max-width: 700px) {
+    .home{
+        bottom: 8%;
+        width: 2rem;
+        height: 2rem;
+    }
+    .home .home-icon{
+        font-size: 0.8rem;
+    }
+    .close{
+        top: 15px;
+        right: 25px;
+        font-size: 22px;
+    }
+    .modal #modalImg{
+        width: 90%;
+        margin-top: 8rem;
+    }
+    .modal .lists{
+        width: 75%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .gallery{
+        width: 80%;
+        margin: 100px auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 150px);
+    }
+}
