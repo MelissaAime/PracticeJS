@@ -117,3 +117,14 @@ main{
 .home:hover .home-icon{
     color: var(--wht);
 }
+
+@media (max-width: 700px) {
+    .home{
+        bottom: 8%;
+        width: 2rem;
+        height: 2rem;
+    }
+    .home .home-icon{
+        font-size: 0.8rem;
+    }
+}
